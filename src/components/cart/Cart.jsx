@@ -20,14 +20,14 @@ const Cart = () => {
       <div className="flex items-center text-white justify-between py-3 border-b">
         <div className="uppercase text-2xl font-semibold">
           Shopping Bag{" "}
-          <span className="text-white text-sm rounded-2xl py-1 px-2 mt-2 bg-red-500 cursor-pointer">
+          <span className="text-black text-sm rounded-2xl py-1 px-2 mt-2 bg-orange-200 cursor-pointer">
             {cart?.length > 0 ? cart?.length : 0}
           </span>
         </div>
 
         <div
           onClick={clearCart}
-          className="py-4 cursor-pointer bg-red-400 text-white text-2xl hover:text-black pt-3 w-12 h-12 flex justify-center"
+          className="py-4 cursor-pointer bg-orange-300 text-white text-2xl hover:text-black pt-3 w-12 h-12 flex justify-center"
         >
           <BsTrash />
         </div>
@@ -56,13 +56,13 @@ const Cart = () => {
         </div>
         <Link
           to="/"
-          className="bg-gray-400 flex px-4 p-2 my-1 justify-center items-center text-red-900 w-full font-medium text-lg"
+          className="bg-red-200 flex px-4 p-2 my-1 justify-center items-center w-full font-medium text-lg"
         >
           View Cart
         </Link>
         <Link
           to="/"
-          className="bg-blue-800 flex px-4 p-2 my-1 justify-center items-center text-white w-full font-medium text-lg"
+          className="bg-red-300 flex px-4 p-2 my-1 justify-center items-center w-full font-medium text-lg"
         >
           Checkout
         </Link>

@@ -15,7 +15,7 @@ const Navbar = () => {
     setMenu(!menu);
   };
   return (
-    <nav className="relative dark:bg-gray-800 w-full top-0 flex justify-between left-0 pb-12">
+    <nav className="relative  w-full top-0 flex justify-between left-0 pb-12">
       <div className="container pl-4 pr-4 py-4 mx-auto md:flex z-10 md:justify-between md:items-center bg-white w-full fixed">
         <div className="flex items-center md:flex md:px-14 py-4  ">
           <Link to="/">
