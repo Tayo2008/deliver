@@ -15,9 +15,9 @@ const Navbar = () => {
     setMenu(!menu);
   };
   return (
-    <nav className="relative dark:bg-gray-800 w-full top-0 flex justify-between left-0 pb-12">
-      <div className="container pl-4 pr-4 py-4 mx-auto md:flex z-10 md:justify-between md:items-center bg-white w-full fixed">
-        <div className="flex items-center md:flex md:px-14 py-4  ">
+    <nav className="fixed bg-white border-b-2 border-blue-200 w-full top-0 flex justify-between left-0 pb-12 z-10">
+      <div className="container pl-4 pr-4  mx-auto md:flex z-10 md:justify-between md:items-center w-full fixed">
+        <div className="flex items-center md:flex md:px-14 py-2  ">
           <Link to="/">
             <FcHome className="w-auto h-6 sm:h-7" />
           </Link>
@@ -30,16 +30,18 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="flex items-center justify-center md:block ">
+        <div className="flex items-center justify-center md:block">
           <a
             onClick={handleOpenCart}
-            className="relative text-gray-800 text-md transition-colors duration-300 transform cursor-pointer hover:text-blue-700 right-1 "
+            className="relative text-blue-400 text-2xl transition-colors duration-300 transform cursor-pointer hover:text-blue-200 right-1 "
           >
             <CgShoppingCart />
 
-            <span className="absolute  -right-1.5 bottom-2.5 text-[12px] text-white bg-red-500 rounded-full w-[18px] h-[18] cursor-pointer justify-center items-center flex">
-              {cart?.length > 0 ? cart?.length : 0}
-            </span>
+            {cart?.length > 0 && (
+              <span className="absolute  -right-3 -top-1 text-xs text-white bg-red-500 rounded-full w-4 h-4 cursor-pointer justify-center items-center flex">
+                {cart?.length > 0 ? cart?.length : 0}
+              </span>
+            )}
           </a>
         </div>
 
@@ -55,25 +57,25 @@ const Navbar = () => {
             <div className="flex flex-col md:flex-row md:mx-6">
               <NavLink
                 to="/"
-                className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+                className="my-2 text-blue-400 transition-colors duration-300 transform  hover:text-blue-200 md:mx-4 md:my-0"
               >
                 Home
               </NavLink>
               <NavLink
-                className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+                className="my-2 text-blue-400 transition-colors duration-300 transform  hover:text-blue-200 md:mx-4 md:my-0"
                 to="/drink"
               >
                 Drink
               </NavLink>
 
               <NavLink
-                className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+                className="my-2 text-blue-400 transition-colors duration-300 transform  hover:text-blue-200 md:mx-4 md:my-0"
                 to="/contact"
               >
                 Contact
               </NavLink>
               <NavLink
-                className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
+                className="my-2 text-blue-400 transition-colors duration-300 transform  hover:text-blue-200 md:mx-4 md:my-0"
                 to="/about"
               >
                 About

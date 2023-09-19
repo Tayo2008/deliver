@@ -6,7 +6,7 @@ import Footer from "./components/footer/Footer";
 import StoreProvider from "./Store/provider";
 import Drink from "./components/drink/Drink";
 import Contact from "./components/contact/Contact";
-import ViewProduct from "./components/product/ViewProduct";
+import ProductView from "./components/product/ProductView";
 import About from "./components/about/About";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/drink" element={<Drink />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/view" element={<ViewProduct />} />
+          <Route path="/view/:id" element={<ProductView />} />
           <Route path="/about" element={<About />} />
         </Routes>
         <Footer />

@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="">
-      <footer className="bg-indigo-300 h-full dark:bg-gray-900">
-        <div className="container p-20 ">
+    <div className="fixed bottom-0 w-full">
+      <footer className="bg-indigo-300 h-1/5 dark:bg-gray-900">
+        <div className="container p-10">
           <div className="lg:flex">
             <div className="w-full  -mx-6 lg:w-2/5">
               <div className="px-6">
@@ -159,7 +159,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <hr className="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
+          <hr className="h-px my-3 bg-gray-200 border-none dark:bg-gray-700" />
 
           <div>
             <p className="text-center text-gray-500 dark:text-gray-400">

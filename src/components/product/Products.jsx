@@ -25,7 +25,7 @@ const Products = () => {
   return (
     <>
       <h2 className="flex mb-6 font-sans justify-center items-center py-8 font-bold text-gray-900 sm:text-4xl md:mx-auto">
-        quick, brown fox jumps over
+        All Products
       </h2>
       <div className="grid px-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px]">
         {isLoading ? (
@@ -42,11 +42,7 @@ const Products = () => {
               <h1 className="text-1 text-lg">Product is currently empty</h1>
             ) : (
               products?.map((item, index) => {
-                return (
-                  <>
-                    <Product key={index} item={item} />
-                  </>
-                );
+                return <Product key={index} item={item} />;
               })
             )}
           </>
