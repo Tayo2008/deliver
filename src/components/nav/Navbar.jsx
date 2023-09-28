@@ -33,12 +33,12 @@ const Navbar = () => {
         <div className="flex items-center justify-center md:block">
           <a
             onClick={handleOpenCart}
-            className="relative text-blue-400 text-2xl transition-colors duration-300 transform cursor-pointer hover:text-blue-200 right-1 "
+            className="relative text-blue-400 -mt-9 top-2 text-2xl transition-colors duration-300 transform cursor-pointer hover:text-blue-200 right-1 "
           >
             <CgShoppingCart />
 
             {cart?.length > 0 && (
-              <span className="absolute  -right-3 -top-1 text-xs text-white bg-red-500 rounded-full w-4 h-4 cursor-pointer justify-center items-center flex">
+              <span className="absolute  -right-3 -top-1 text-xs text-white bg-red-500 rounded-full w-4 h-4 cursor-pointer justify-center items-center flex ">
                 {cart?.length > 0 ? cart?.length : 0}
               </span>
             )}
@@ -84,7 +84,7 @@ const Navbar = () => {
           </div>
         </div>
         <div
-          className="inline  slef-start text-3xl absolute right-6 top-7 cursor-pointer md:hidden "
+          className="inline  slef-start text-3xl top-3 absolute right-6  cursor-pointer md:hidden "
           onClick={handle}
         >
           {!menu ? <CgMenu /> : <CgClose />}
