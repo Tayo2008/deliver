@@ -61,12 +61,6 @@ const Navbar = () => {
               >
                 Home
               </NavLink>
-              <NavLink
-                className="my-2 text-blue-400 transition-colors duration-300 transform  hover:text-blue-200 md:mx-4 md:my-0"
-                to="/drink"
-              >
-                Drink
-              </NavLink>
 
               <NavLink
                 className="my-2 text-blue-400 transition-colors duration-300 transform  hover:text-blue-200 md:mx-4 md:my-0"

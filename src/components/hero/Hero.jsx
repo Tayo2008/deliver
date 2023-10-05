@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <>
+    <div>
       <div className="relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0">
         <div className="flex flex-col items-start w-full max-w-xl pt-5 px-4 mx-auto lg:px-8 lg:max-w-screen-xl">
           <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
@@ -44,7 +44,7 @@ const Hero = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
